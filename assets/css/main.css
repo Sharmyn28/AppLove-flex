@@ -1,0 +1,277 @@
+/*CLASES REUTILIZABLES*/
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+.container:after {
+    clear: both;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+a {
+  color: #373B47;
+  text-decoration: none;
+}
+a:hover {
+  color: #E95853;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.link{
+  font-weight: 700;
+  padding: 21px;
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.logo{
+  width: 10%;
+  float: right;
+}
+
+header{
+  position: fixed;
+  background: white;
+  width: 100%;
+  top: 0;
+  display: flex;
+}
+
+.menu{
+  /*padding: 14px 70px;*/
+  overflow: auto;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+#home{
+  background-image: url(../img/bg-home.jpg);
+  /*background-position: center;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+
+#home .container{
+  color: white;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-home{
+  background: #2ECC71;
+  color:#fff;
+  padding: 11px 20px;
+  border-radius: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 63px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+
+/*SECTION SERVICES*/
+#services{
+  background-color: #F17C72;
+  text-align: center;
+  color: #fff;
+  padding: 70px 7px;
+  display: flex;
+}
+.row-service{
+  display: inline-flex;
+  justify-content: space-between;
+}
+.col-4{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  margin-top: 63px;
+}
+
+.text.services{
+  display: inline-block;
+  width: 30%;
+  margin-top: 63px;
+}
+
+.img-service{
+  display: flex;
+}
+.info-services{
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  height: 70px;
+  background: #373B47;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WORK*/
+#image{
+  width:800px;
+  height:600px;
+}
+#work{
+  display: flex;
+  flex-direction: row;  
+}
+.work-img{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.text-work{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*CONTAINER GRID*/
+#containerGrid{
+  margin: auto;
+  text-align: center;
+}
+
+#containerGrid img{
+  width: 300px;
+  height: 300px; 
+  cursor: zoom-in;
+  /*cursor: url(../img/lupa.jpg);*/
+}
+
+.div-image{
+  display: inline-flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.image{
+  border: 3px solid gray;
+  display: flex;
+}
+
+/*MODAL*/
+#modal{
+ background: rgba(0, 0, 0, 0.8);
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ transition: all .5s;
+ text-align: center;
+ display: none; 
+}
+
+#close{
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 640px;
+}
+
+#next{
+  color: #fff;
+  font-size: 80px;
+  background: #424949;
+  border: #000;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 250px;
+  margin-left: 700px;
+  position: absolute;
+}
+
+#previous{
+  color: #fff;
+  font-size: 80px;
+  background: #424949;
+  border: #000;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 250px;
+  margin-left: -80px;
+  position: absolute;
+}
+#content-image {
+  border: 10px white solid;
+  width: 700px;
+  height: 600px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#content-image img{
+  width: 100%;
+  height: 100%;
+}
